@@ -6,10 +6,15 @@ int disariumCalculation(int number);
 
 int main(){
     int number;
-  
+
 
     printf("Enter a number : ");
     scanf("%d", &number);
+
+    if(number < 0){
+        printf("Disarium number condition can be checked only for positive nunbers");
+        return 0;
+    }
 
     int ultaNumber = reverseNumber(number);
 
