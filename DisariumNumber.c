@@ -21,7 +21,7 @@ int main(){
     int sumPowerPosition = disariumCalculation(ultaNumber);
 
     if(number == sumPowerPosition){
-        printf("%d is a disarum number", number);
+        printf("%d is a disarium number", number);
     } else{
         printf("%d is not a disarium number", number);
     }
@@ -48,7 +48,7 @@ int disariumCalculation(int number)
 
      while(number != 0){
         int digits = number % 10;
-        sum = sum + pow((int)(digits), (int)(i));
+        sum += pow(digits,i);
         number /= 10;
         i++;
     }
